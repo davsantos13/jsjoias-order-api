@@ -4,3 +4,14 @@ server:
 spring:
   application:
     name: order-api
+    
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create
+    datasource:
+      platform: postgresql
+      url: jdbc://postgresql:/${DATASOURCE_URL:64.227.103.59}:5432/jsjoias_orders
+      username: postgres
+      password: root
+      driverClassName: org.postgresql.Driver
